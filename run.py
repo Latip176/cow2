@@ -128,7 +128,7 @@ class crack:
 		if(yt in ("y","Y")):
 			os.system("rm -rf ua")
 			uaBaru=input("[+] Masukan Useragent Baru: ")
-			open("ua","w").write(uaBaru)
+			open("ua","a").write(uaBaru)
 			input("\n[✓] Useragent Berhasil Diganti\n[!] Enter For Back To Menu")
 			self.menu()
 		elif(yt in ("t","T")):
